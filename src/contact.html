@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" class="h-[100%] overflow-auto">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Contact</title>
+
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Livvic:wght@400;600;700&display=swap" rel="stylesheet" />
+
+		<!-- Tailwind CSS -->
+		<link href="./output.css" rel="stylesheet" />
+	</head>
+	<body class="font-[Livvic] bg-[#014E56] text-white relative overflow-hidden">
+		<!-- Left Decoration -->
+		<div class="absolute  top-[250px] left-[-50px] z-0 pointer-events-none ">
+			<img class="w-[200px] h-[200px] object-contain transition-all duration-300 sm:w-[140px] md:w-[160px] lg:w-[200px]" src="images/icons/disk.svg"	alt="left pattern" />
+		</div>
+
+		<!-- Right Decoration -->
+		<div class="absolute bottom-0 right-0 z-0 pointer-events-none">
+			<img
+				src="images/icons/Group 7.svg"
+				alt="right circle"
+				class="w-[200px] max-w-[20vw] object-contain transition-all duration-300 sm:w-[140px] md:w-[160px] lg:w-[200px]" />
+		</div>
+
+		<!-- Header -->
+		<header class="pt-[73px] mb-[129px] relative z-10">
+			<div class="max-w-6xl mx-auto px-5 flex flex-col md:flex-row items-center justify-between text-center md:text-left">
+				<div class="flex items-center gap-16 max-w-[380px] w-full flex-col md:flex-row md:gap-16 md:items-center">
+					<a href="/">
+						<img src="images/logos/myteam.svg" alt="myteam" class="w-[160px] h-auto" />
+					</a>
+					<ul class="flex gap-10 text-lg font-semibold flex-col md:flex-row md:gap-10">
+						<li><a class="hover:text-[#F67E7E] transition" href="home.html">home</a></li>
+						<li><a class="hover:text-[#F67E7E] transition" href="about.html">about</a></li>
+					</ul>
+				</div>
+				<a
+					href="contact.html"
+					class="mt-6 md:mt-0 border-2 border-white py-[9px] px-[33px] rounded-3xl hover:bg-white hover:text-[#002529] transition">
+					contact us
+				</a>
+			</div>
+		</header>
+
+		<!-- Contact Section -->
+		<section class="relative pb-[120px] z-10">
+			<div class="max-w-6xl mx-auto px-5 flex flex-col md:flex-row items-start justify-between gap-12 text-center md:text-left">
+				<!-- Left Content -->
+				<div class="max-w-[540px] w-full">
+					<h1 class="text-[40px] md:text-[64px] font-bold leading-tight mb-4">Contact</h1>
+					<h2 class="text-[24px] md:text-[32px] font-bold text-[#F67E7E] mb-8">Ask us about</h2>
+					<ul class="flex flex-col gap-4 items-center md:items-start">
+						<li class="flex items-center gap-6">
+							<img src="images/icons/icon-feature-experience.svg" alt="icon" />
+							<h2 class="text-[18px] font-bold">The quality of our talent network</h2>
+						</li>
+						<li class="flex items-center gap-6">
+							<img src="images/icons/icon-feature-implementation.svg" alt="icon" />
+							<h2 class="text-[18px] font-bold">The quality of our talent network</h2>
+						</li>
+						<li class="flex items-center gap-6">
+							<img src="images/icons/icon-feature-productivity.svg" alt="icon" />
+							<h2 class="text-[18px] font-bold">The quality of our talent network</h2>
+						</li>
+					</ul>
+				</div>
+
+				<!-- Form -->
+				<form class="space-y-8 max-w-[542px] w-full">
+					<div class="space-y-6">
+						<input
+							type="text"
+							name="name"
+							placeholder="Name"
+							class="w-full bg-transparent border-b border-white/30 pb-2 text-white placeholder-white/70 focus:outline-none focus:border-white transition-colors" />
+						<input
+							type="email"
+							name="email"
+							placeholder="Email Address"
+							class="w-full bg-transparent border-b border-white/30 pb-2 text-white placeholder-white/70 focus:outline-none focus:border-white transition-colors" />
+						<input
+							type="text"
+							name="company"
+							placeholder="Company Name"
+							class="w-full bg-transparent border-b border-white/30 pb-2 text-white placeholder-white/70 focus:outline-none focus:border-white transition-colors" />
+						<input
+							type="text"
+							name="title"
+							placeholder="Title"
+							class="w-full bg-transparent border-b border-white/30 pb-2 text-white placeholder-white/70 focus:outline-none focus:border-white transition-colors" />
+						<textarea
+							name="message"
+							placeholder="Message"
+							rows="4"
+							class="w-full bg-transparent border-b border-white/30 pb-2 text-white placeholder-white/70 focus:outline-none focus:border-white transition-colors resize-none"></textarea>
+					</div>
+					<div class="pt-4">
+						<button
+							onclick="alert ('Your request has been successfully received.')"
+							type="submit"
+							class="bg-white text-teal-800 px-8 py-3 rounded-full font-medium hover:bg-gray-100 transition">
+							submit
+						</button>
+					</div>
+				</form>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer class="bg-[#002529] pt-[48px] pb-[48px] relative">
+			<div
+				class="max-w-[1110px] mx-auto flex flex-col lg:flex-row gap-[40px] lg:gap-[125px] text-center lg:text-left items-center lg:items-start">
+				<div class="flex flex-col gap-[25px] items-center lg:items-start">
+					<img src="images/logos/myteam.svg" alt="myteam logo" width="160" height="40" />
+					<div class="flex gap-[40px] flex-col lg:flex-row">
+						<h2 class="text-[18px] font-[600] leading-[28px]">home</h2>
+						<h2 class="text-[18px] font-[600] leading-[28px]">about</h2>
+					</div>
+				</div>
+				<div>
+					<p class="text-[15px] font-[600] leading-[25px] w-[167px] text-[#99A8A9]">
+						987 Hillcrest Lane<br />
+						Irvine, CA<br />
+						California 92714<br />
+						Call Us : 949-833-7432
+					</p>
+				</div>
+				<div class="flex flex-col items-center lg:ml-auto">
+					<div class="flex gap-[16px] mb-[50px]">
+						<a href="#"><img src="images/logos/icon-facebook.svg" alt="facebook" /></a>
+						<a href="#"><img src="images/logos/icon-pinterest.svg" alt="pinterest" /></a>
+						<a href="#"><img src="images/logos/icon-twitter.svg" alt="twitter" /></a>
+					</div>
+					<p class="text-[15px] font-[600] leading-[25px] text-[#738789]">Copyright 2020. All Rights Reserved</p>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
